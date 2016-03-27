@@ -1,0 +1,3 @@
+# Hasher
+A simple cryptographic hash with salt algorithms on SHA512 crypto class.
+This class generates and compares hashes using MD5, SHA1, SHA256, SHA384, and SHA512 hashing algorithms. Before computing a hash, it appends a randomly generated salt to the plain text, and stores this salt appended to the result. To verify another plain text value against the given hash, this class will retrieve the salt value from the hash string and use it when computing a new hash of the plain text. Appending a salt value to the hash may not be the most efficient approach, so when using hashes in a real-life application, you may choose to store them separately. You may also opt to keep results as byte arrays instead of converting them into base64-encoded strings.
